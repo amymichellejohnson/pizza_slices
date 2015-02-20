@@ -1,0 +1,29 @@
+body {
+  font-family: 'Lobster', cursive;
+  font-size: 175%;
+  background-image: url("img/pizza1.jpg");
+  background-repeat: no-repeat
+}
+
+h1 {
+  text-shadow: 3px 3px 5px white;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+form {
+  background-color: hsla(360, 100%, 100%, 0.63);
+  padding: 10px;
+}
+
+.slices, .thankyou {
+  display: none;
+  background-color: hsla(360, 100%, 100%, 0.63);
+}
+
+#slices, #feed-adults {
+  color: blue;
+}

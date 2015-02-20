@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza slice calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1> Welcome to Epicodus Pizza Place! </h1>
+      <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <form class="diameter">
+            <h2>1. What size of a pizza do you need?</h2>
+            <h3>Calulate how many slices* are in our pizzas! </h3>
+            <p> *a slice is approximately 14 sq. inches </p>
+            <div class = "form-group">
+              <label for="diameter">Diameter in inches:</label>
+              <input class="diameter" placeholder="12" type="text" required >
+            </div>
+            <button type="submit" class="btn">Calculate Pizza slices</button>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <div class ="slices">
+            <h3>Number of slices in a <span id="diameter"></span>-inch pizza: <span id="slices"></span></h3>
+            <h3>Approximate number of adults this pizza will feed: <span id="feed-adults"></span></h3>
+          </div>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-6">
+          <form class="order-pizza">
+            <div class="form-group">
+              <h2>2. Now order your pizza!</h2>
+              <label for="pizza-kind">Type of pizza:</label>
+              <br>
+              <input type = "radio" name="pizza-kind" required value = "cheese"> Cheese
+              <br>
+              <input type = "radio" name="pizza-kind" required value = "pepperoni"> Pepperoni
+              <div class = "form-group">
+                <label for="order-diameter">Diameter in inches:</label>
+                <input class="order-diameter" placeholder="12" type="text" required>
+              </div>
+              <button type="submit" class="btn">Order now</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <div class="thankyou">
+            <h3>Your order of: 1 <span class="order"></span>-inch pizza is on its way! Thank you for your order!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
